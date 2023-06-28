@@ -7,15 +7,6 @@ static function getAnchorName(section) {
 }
 
 <div class="app-sections">
-  <div class="tableOfContents">
-    <ul>
-      <for|section| of=input.sections>
-        <li>
-          <a href=`#${getAnchorName(section)}`>${section.title}</a>
-        </li>
-      </for>
-    </ul>
-  </div>
   <div class="sections-ctr">
     <for|section| of=input.sections>
       <div class="section">
